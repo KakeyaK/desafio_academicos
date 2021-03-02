@@ -1,1 +1,59 @@
-body
+:root {
+    --blue: #0D74C4;
+    font-family: 'Nunito', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+  }
+
+header{
+    background-color: var(--blue);
+    
+    height: 900px;
+}
+
+#logo_titulo{
+    width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+}
+
+#caixa_login{
+    color:var(--blue);
+    font-weight: 600;
+    font-size: 2em;
+    
+
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -80px;
+
+    text-align: center;
+}
+
+#caixa_login p{
+    background-color: white;
+    display: inline;
+
+    border-radius: 100px;
+
+    padding: 20px 100px;
+    
+}
+
+#caixa_conteudo div{
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h2{
+    display: block;
+    text-align: center;
+}
