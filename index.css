@@ -3,12 +3,20 @@
     font-family: 'Nunito', sans-serif;
     color: rgba(0, 0, 0, 0.5);
     font-size: 24px;
+
+    font-weight: 300;
   }
 
+body{
+    margin:0px;
+}
+
 header{
+    width: 100%;
+
     background-color: var(--blue);
     
-    height: 900px;
+    height: 850px;
 }
 
 #logo_titulo{
@@ -22,7 +30,7 @@ header{
 
 #caixa_login{
     color:var(--blue);
-    font-weight: 600;
+    font-weight: bold;
     font-size: 2em;
     
 
@@ -30,7 +38,7 @@ header{
 
     margin-left: auto;
     margin-right: auto;
-    margin-top: -80px;
+    margin-top: -30px;
 
     text-align: center;
 }
@@ -40,20 +48,197 @@ header{
     display: inline;
 
     border-radius: 100px;
-
+    
     padding: 20px 100px;
     
 }
 
-#caixa_conteudo div{
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.1);
-    width: 1000px;
+/* Caixas de texto geral*/
 
-    margin-left: auto;
-    margin-right: auto;
+main{
+    position: relative;
+    top: -120px;
 }
 
 main h2{
     display: block;
     text-align: center;
+
+    color: #3F4254;
+}
+
+main h3{
+    color: #3F4254;
+}
+
+main b{
+    color: #3F4254;
+}
+
+.caixa_de_texto{
+    background-color: white;
+
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    width: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 50px;
+
+    padding: 20px 48px;
+}
+
+/* Caixas conteúdo */
+
+#caixa_conteudo .caixa_de_texto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#caixa_conteudo img{
+    margin-right: 39px;
+
+    width: 140px;
+    height: 75px;
+    background-color: black;
+}
+
+/* Caixas Instrutores */
+
+#caixa_instrutores img{
+    display: block;
+    margin: auto;
+
+    width: 75px;
+    height: 75px;
+    background-color: black; 
+}
+
+#caixa_instrutores .arrow_instrutor{
+    background-color: blue;
+
+    
+    position: relative;
+    top: 40px;
+    border-radius: 100px;
+}
+
+/* "Que tal embarcar nessa jornada" */
+
+#embarque_jornada{
+    padding: 103px;
+    background-color:#F3F6F9;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    position: relative;
+    bottom: 0px;
+}
+
+#embarque_texto{
+    display: flex;
+
+    flex-direction: column;
+}
+
+#embarque_butoes{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+
+    position: relative;
+    top: 15px;
+
+    text-align: center;
+}
+
+#calltoaction_embarque{
+    font-size: 28px;
+
+    color: var(--blue);
+    font-weight: bold;
+    display: inline;
+}
+
+#faca_login{
+    color: #3F4254;
+    margin: 0px;
+}
+
+#cadastrar{
+    line-height: 60px;
+
+    color: white;
+    font-weight: 300;
+
+    width: 257.14px;
+    height: 60px;
+
+    background: var(--blue);
+    box-shadow: 2px 2px 25px rgba(13, 116, 196, 0.3);
+    border-radius: 100px;
+
+    margin-right: 25px;
+}
+
+#login{
+    line-height: 60px;
+
+    color: var(--blue);
+
+    width: 257.14px;
+    height: 60px;
+
+    background: #FFFFFF;
+    box-shadow: 2px 2px 25px rgba(13, 116, 196, 0.3);
+    border-radius: 100px;
+}
+
+/* footer */
+
+footer{
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: var(--blue);
+
+    color: white;
+
+    line-height: 150%;
+}
+
+#redes_sociais{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 41%;
+    padding-right: 41%;
+}
+
+footer img{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+
+#visite_academicos{
+    margin: 30px auto 40px auto;
+
+    padding: 10px;
+
+    color: var(--blue);
+    background-color: white;
+
+    width: 50%;
+
+    box-shadow: 2px 2px 25px rgba(13, 116, 196, 0.3);
+    border-radius: 100px;
 }
