@@ -1,4 +1,4 @@
-:root {
+:root{
     --blue: #0D74C4;
     --dark-gray:  #3F4254;
     --darker-gray: #333333;
@@ -134,32 +134,42 @@ main b{
 
 /* Caixas Instrutores */
 
+#caixa_instrutores .caixa_de_texto{
+    height: 30vh;
+}
+
 #caixa_instrutores img{
     display: block;
     margin: auto;
+    margin-bottom: 2vh;
 
-    width: 40%;
-    background-color: black; 
+    height: 12vh;
 }
 
 #caixa_instrutores .arrow_instrutor{
-    background-color: blue;
+    background-color: var(--blue);
 
-    
     position: relative;
-    top: 40px;
+    bottom: 1vh;
+
+    height: 2vh;
+    width: 2vh;
+    padding: 2vh;
+
     border-radius: 100px;
 }
 
 /* "Que tal embarcar nessa jornada" */
-/* 
-#embarque_jornada{
 
-    padding: 103px;
+#caixa_embarque_jornada{
+
+    padding: 0px;
     background-color:#F3F6F9;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    align-items: center;
 
     justify-content: space-around;
 
@@ -167,30 +177,20 @@ main b{
     bottom: 0px;
 }
 
+/* Caixa com call to action de cadastro e login */
 #embarque_texto{
     display: flex;
-
     flex-direction: column;
 }
 
-#embarque_butoes{
-    display: flex;
-
-    flex-direction: row;
-    justify-content: space-around;
-
-    position: relative;
-    top: 15px;
-
-    text-align: center;
-}
-
 #calltoaction_embarque{
-    font-size: 28px;
+    font-size: 1.5em;
 
     color: var(--blue);
     font-weight: bold;
     display: inline;
+
+    margin-bottom: 0.4em;
 }
 
 #faca_login{
@@ -198,29 +198,42 @@ main b{
     margin: 0px;
 }
 
+/* Caixa com butoes de cadastro e login */
+#embarque_butoes{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
+    margin-top: 1.5em;
+    width: 80%;
+}
+
 #cadastrar{
-    line-height: 60px;
+    line-height: 4em;
 
     color: white;
     font-weight: 300;
 
-    width: 257.14px;
-    height: 60px;
+    width: 47%;
+    height: 4em;
 
     background: var(--blue);
     box-shadow: 2px 2px 25px rgba(13, 116, 196, 0.3);
     border-radius: 100px;
 
-    margin-right: 25px;
 }
 
 #login{
-    line-height: 60px;
+    line-height: 4em;
 
     color: var(--blue);
 
-    width: 257.14px;
-    height: 60px;
+    width: 47%;
+    height: 4em;
 
     background: #FFFFFF;
     box-shadow: 2px 2px 25px rgba(13, 116, 196, 0.3);
@@ -230,30 +243,39 @@ main b{
 /* footer */
 
 footer{
-    display: none;
-
-    padding: 40px;
+    padding: 0px;
+    /* height: 100%; */
 
     text-align: center;
-
-    background-color: var(--blue);
-
+    line-height: 1.5em;
     color: white;
 
-    line-height: 150%;
+    background-color: var(--blue);
 }
 
 #redes_sociais{
+    margin: auto;
+    width: 80%;
+
     display: flex;
     justify-content: space-between;
-    padding-left: 41%;
-    padding-right: 41%;
 }
 
-footer img{
-    height: 50px;
-    width: 50px;
-    background-color: black;
+.rede_social_background{
+    background-color: white;
+
+    width: 50%;
+    height: 50%;
+
+    border-radius: 100px;
+}
+
+.rede_social_background img{
+    background-color: red;
+
+    width: 80%;
+
+    opacity: 50%;
 }
 
 #visite_academicos{
@@ -268,4 +290,4 @@ footer img{
 
     box-shadow: 2px 2px 25px rgba(13, 116, 196, 0.3);
     border-radius: 100px;
-} */
+}
