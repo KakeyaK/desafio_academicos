@@ -348,6 +348,8 @@ footer{
     #caixa_embarque_jornada{
         height: 10em;
         flex-direction: row;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
 
     #redes_sociais{
