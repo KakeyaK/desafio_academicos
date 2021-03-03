@@ -1,29 +1,35 @@
 :root {
     --blue: #0D74C4;
+    --dark-gray:  #3F4254;
+    --darker-gray: #333333;
+
     font-family: 'Nunito', sans-serif;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 24px;
+    font-size: 12px;
 
     font-weight: 300;
   }
 
 body{
     margin:0px;
+    padding: 0px;
 }
 
 header{
     width: 100%;
+    height: 45vh;
 
     background-color: var(--blue);
-    
-    height: 850px;
 }
 
 #logo_titulo{
-    width: 1000px;
+    width: 95%;
 
     margin-left: auto;
     margin-right: auto;
+
+    position: relative;
+    top: -20px;
 
     display: block;
 }
@@ -31,14 +37,14 @@ header{
 #caixa_login{
     color:var(--blue);
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.2em;
     
 
     display: block;
 
     margin-left: auto;
     margin-right: auto;
-    margin-top: -30px;
+    /* margin-top: -30px; */
 
     text-align: center;
 }
@@ -49,26 +55,35 @@ header{
 
     border-radius: 100px;
     
-    padding: 20px 100px;
-    
+    padding: 0.6em 9vw;
+
+    position: relative;
+    top: -5vh;
 }
 
 /* Caixas de texto geral*/
 
 main{
     position: relative;
-    top: -120px;
+    top: -10vh;
 }
 
 main h2{
     display: block;
     text-align: center;
 
-    color: #3F4254;
+    color: var(--darker-gray);
+    margin-top: 4vh;
+}
+
+main div h2{
+    color: var(--dark-gray);
+    margin-top: 0vh;
 }
 
 main h3{
     color: #3F4254;
+    margin-top: 0px;
 }
 
 main b{
@@ -77,18 +92,18 @@ main b{
 
 .caixa_de_texto{
     background-color: white;
+    line-height: 1.3em;
 
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 
-    width: 1000px;
+    width: 75%;
 
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5vh;
 
-    margin-bottom: 50px;
-
-    padding: 20px 48px;
+    padding: 3vh 8%;
 }
 
 /* Caixas conteúdo */
@@ -99,12 +114,22 @@ main b{
     align-items: center;
 }
 
-#caixa_conteudo img{
-    margin-right: 39px;
+#caixa_conteudo .icone_background{
+    margin-left: -5%;
+    margin-right: 7%;
 
-    width: 140px;
-    height: 75px;
-    background-color: black;
+    height: 5vh;
+    
+    padding: 6%;
+    border-radius: 100px;
+    
+    background-color: #F3F6F9;
+}
+
+#caixa_conteudo img{
+    opacity: 75%;
+
+    height: 5vh;
 }
 
 /* Caixas Instrutores */
@@ -113,8 +138,7 @@ main b{
     display: block;
     margin: auto;
 
-    width: 75px;
-    height: 75px;
+    width: 40%;
     background-color: black; 
 }
 
@@ -128,8 +152,9 @@ main b{
 }
 
 /* "Que tal embarcar nessa jornada" */
-
+/* 
 #embarque_jornada{
+
     padding: 103px;
     background-color:#F3F6F9;
 
@@ -205,6 +230,8 @@ main b{
 /* footer */
 
 footer{
+    display: none;
+
     padding: 40px;
 
     text-align: center;
@@ -241,4 +268,4 @@ footer img{
 
     box-shadow: 2px 2px 25px rgba(13, 116, 196, 0.3);
     border-radius: 100px;
-}
+} */
