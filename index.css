@@ -5,14 +5,16 @@
 
     font-family: 'Nunito', sans-serif;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 12px;
+    font-size: 14px;
 
     font-weight: 300;
-  }
+
+}
 
 body{
     margin:0px;
     padding: 0px;
+    position: relative;
 }
 
 header{
@@ -23,13 +25,14 @@ header{
 }
 
 #logo_titulo{
-    width: 95%;
+    width: 100%;
+    max-width: 370px;
 
     margin-left: auto;
     margin-right: auto;
 
     position: relative;
-    top: -20px;
+    top: -1em;
 
     display: block;
 }
@@ -38,32 +41,33 @@ header{
     color:var(--blue);
     font-weight: bold;
     font-size: 1.2em;
-    
 
     display: block;
 
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: -30px; */
+    margin-top: 0px;
 
     text-align: center;
 }
 
 #caixa_login p{
+
     background-color: white;
     display: inline;
 
     border-radius: 100px;
     
-    padding: 0.6em 9vw;
+    padding: 0.6em 2.5em;
 
     position: relative;
-    top: -5vh;
 }
 
 /* Caixas de texto geral*/
 
 main{
+    height: 100%;
+
     position: relative;
     top: -10vh;
 }
@@ -79,6 +83,7 @@ main h2{
 main div h2{
     color: var(--dark-gray);
     margin-top: 0vh;
+    margin-bottom: 1.5em;
 }
 
 main h3{
@@ -91,6 +96,7 @@ main b{
 }
 
 .caixa_de_texto{
+
     background-color: white;
     line-height: 1.3em;
 
@@ -98,12 +104,17 @@ main b{
     border-radius: 5px;
 
     width: 75%;
+    max-width: 700px;
 
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5vh;
 
     padding: 3vh 8%;
+}
+
+#caixa_texto_2{
+    text-align: center;
 }
 
 /* Caixas conteúdo */
@@ -128,29 +139,24 @@ main b{
 
 #caixa_conteudo img{
     opacity: 75%;
-
     height: 5vh;
 }
 
 /* Caixas Instrutores */
-
-#caixa_instrutores .caixa_de_texto{
-    height: 30vh;
-}
 
 #caixa_instrutores img{
     display: block;
     margin: auto;
     margin-bottom: 2vh;
 
-    height: 12vh;
+    height: 10vh;
 }
 
 #caixa_instrutores .arrow_instrutor{
     background-color: var(--blue);
 
     position: relative;
-    bottom: 1vh;
+    bottom: -3.5em;
 
     height: 2vh;
     width: 2vh;
@@ -163,7 +169,7 @@ main b{
 
 #caixa_embarque_jornada{
 
-    padding: 0px;
+    padding-bottom: 3em;
     background-color:#F3F6F9;
 
     display: flex;
@@ -177,10 +183,13 @@ main b{
     bottom: 0px;
 }
 
-/* Caixa com call to action de cadastro e login */
+    /* Caixa com call to action de cadastro e login */
 #embarque_texto{
     display: flex;
     flex-direction: column;
+    width: 78%;
+    
+    max-width: 670px;
 }
 
 #calltoaction_embarque{
@@ -191,6 +200,7 @@ main b{
     display: inline;
 
     margin-bottom: 0.4em;
+
 }
 
 #faca_login{
@@ -198,7 +208,7 @@ main b{
     margin: 0px;
 }
 
-/* Caixa com butoes de cadastro e login */
+    /* Caixa com butoes de cadastro e login */
 #embarque_butoes{
     display: flex;
 
@@ -210,16 +220,18 @@ main b{
 
     margin-top: 1.5em;
     width: 80%;
+
+    max-width: 700px;
 }
 
 #cadastrar{
-    line-height: 4em;
+    line-height: 3em;
 
     color: white;
     font-weight: 300;
 
     width: 47%;
-    height: 4em;
+    height: 3em;
 
     background: var(--blue);
     box-shadow: 2px 2px 25px rgba(13, 116, 196, 0.3);
@@ -228,12 +240,13 @@ main b{
 }
 
 #login{
-    line-height: 4em;
+    line-height: 3em;
 
+    font-weight: bold;
     color: var(--blue);
 
     width: 47%;
-    height: 4em;
+    height: 3em;
 
     background: #FFFFFF;
     box-shadow: 2px 2px 25px rgba(13, 116, 196, 0.3);
@@ -243,8 +256,10 @@ main b{
 /* footer */
 
 footer{
-    padding: 0px;
-    /* height: 100%; */
+    position: absolute;
+    bottom: -9em;
+
+    width: 100%;
 
     text-align: center;
     line-height: 1.5em;
@@ -255,7 +270,8 @@ footer{
 
 #redes_sociais{
     margin: auto;
-    width: 80%;
+    width: 60%;
+    max-width: 700px;
 
     display: flex;
     justify-content: space-between;
@@ -264,30 +280,83 @@ footer{
 .rede_social_background{
     background-color: white;
 
-    width: 50%;
-    height: 50%;
+    width: 3.5em;
+    height: 3.5em;
 
     border-radius: 100px;
+    margin-top: 2em;
+
+    display: flex;
 }
 
 .rede_social_background img{
-    background-color: red;
-
-    width: 80%;
-
-    opacity: 50%;
+    width: 2em;
+    margin: auto;
 }
 
 #visite_academicos{
-    margin: 30px auto 40px auto;
-
+    margin: 1.2em auto 1.2em auto;
     padding: 10px;
 
+    font-weight: bold;
     color: var(--blue);
     background-color: white;
 
-    width: 50%;
+    width: 70%;
+    max-width: 700px;
 
     box-shadow: 2px 2px 25px rgba(13, 116, 196, 0.3);
     border-radius: 100px;
 }
+
+@media only screen and (min-width: 300px){
+    #caixa_login{
+        margin-top: -30px;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+    :root {
+        font-size: 18px;
+    }
+
+    #logo_titulo{
+        max-width: 540px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    
+    header{
+        height: 50vh;
+    }
+
+    #logo_titulo{
+        max-width: 800px;
+        top: -70px;
+    }
+
+    #caixa_login{
+        margin-top: -140px;
+    }
+
+    main{
+        top: -8vh;
+    }
+    
+    #caixa_embarque_jornada{
+        height: 10em;
+        flex-direction: row;
+    }
+
+    #redes_sociais{
+        justify-content: center;
+    }
+
+    .rede_social_background{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
